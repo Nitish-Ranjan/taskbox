@@ -2517,17 +2517,17 @@
                 "name": "Default",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/app/stories/pure-task-list.stories.ts",
+                "file": "src/app/stories/pure-inbox-screen.stories.ts",
                 "type": "",
-                "defaultValue": "() => ({\r\n  component: PureTaskListComponent,\r\n  template: `\r\n  <div style=\"padding: 3rem\">\r\n    <app-pure-task-list [tasks]=\"tasks\" (onPinTask)=\"onPinTask($event)\" (onArchiveTask)=\"onArchiveTask($event)\"></app-pure-task-list>\r\n  </div>\r\n`,\r\n  props: {\r\n    tasks: defaultTasksData,\r\n    onPinTask: actionsData.onPinTask,\r\n    onArchiveTask: actionsData.onArchiveTask,\r\n  },\r\n})"
+                "defaultValue": "() => ({\r\n  component: PureInboxScreenComponent,\r\n})"
             },
             {
                 "name": "Default",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/app/stories/pure-inbox-screen.stories.ts",
+                "file": "src/app/stories/pure-task-list.stories.ts",
                 "type": "",
-                "defaultValue": "() => ({\r\n  component: PureInboxScreenComponent,\r\n})"
+                "defaultValue": "() => ({\r\n  component: PureTaskListComponent,\r\n  template: `\r\n  <div style=\"padding: 3rem\">\r\n    <app-pure-task-list [tasks]=\"tasks\" (onPinTask)=\"onPinTask($event)\" (onArchiveTask)=\"onArchiveTask($event)\"></app-pure-task-list>\r\n  </div>\r\n`,\r\n  props: {\r\n    tasks: defaultTasksData,\r\n    onPinTask: actionsData.onPinTask,\r\n    onArchiveTask: actionsData.onArchiveTask,\r\n  },\r\n})"
             },
             {
                 "name": "Default",
@@ -2549,9 +2549,9 @@
                 "name": "Default",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "taskbox/src/app/stories/pure-task-list.stories.ts",
+                "file": "taskbox/src/app/stories/pure-inbox-screen.stories.ts",
                 "type": "",
-                "defaultValue": "() => ({\r\n  component: PureTaskListComponent,\r\n  template: `\r\n  <div style=\"padding: 3rem\">\r\n    <app-pure-task-list [tasks]=\"tasks\" (onPinTask)=\"onPinTask($event)\" (onArchiveTask)=\"onArchiveTask($event)\"></app-pure-task-list>\r\n  </div>\r\n`,\r\n  props: {\r\n    tasks: defaultTasksData,\r\n    onPinTask: actionsData.onPinTask,\r\n    onArchiveTask: actionsData.onArchiveTask,\r\n  },\r\n})"
+                "defaultValue": "() => ({\r\n  component: PureInboxScreenComponent,\r\n})"
             },
             {
                 "name": "Default",
@@ -2565,9 +2565,9 @@
                 "name": "Default",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "taskbox/src/app/stories/pure-inbox-screen.stories.ts",
+                "file": "taskbox/src/app/stories/pure-task-list.stories.ts",
                 "type": "",
-                "defaultValue": "() => ({\r\n  component: PureInboxScreenComponent,\r\n})"
+                "defaultValue": "() => ({\r\n  component: PureTaskListComponent,\r\n  template: `\r\n  <div style=\"padding: 3rem\">\r\n    <app-pure-task-list [tasks]=\"tasks\" (onPinTask)=\"onPinTask($event)\" (onArchiveTask)=\"onArchiveTask($event)\"></app-pure-task-list>\r\n  </div>\r\n`,\r\n  props: {\r\n    tasks: defaultTasksData,\r\n    onPinTask: actionsData.onPinTask,\r\n    onArchiveTask: actionsData.onArchiveTask,\r\n  },\r\n})"
             },
             {
                 "name": "Default",
@@ -2613,7 +2613,7 @@
                 "name": "defaultTasksData",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "taskbox/src/app/stories/pure-task-list.stories.ts",
+                "file": "taskbox/src/app/stories/task-list.stories.ts",
                 "type": "[]",
                 "defaultValue": "[\r\n  { ...taskData, id: '1', title: 'Task 1' },\r\n  { ...taskData, id: '2', title: 'Task 2' },\r\n  { ...taskData, id: '3', title: 'Task 3' },\r\n  { ...taskData, id: '4', title: 'Task 4' },\r\n  { ...taskData, id: '5', title: 'Task 5' },\r\n  { ...taskData, id: '6', title: 'Task 6' },\r\n]"
             },
@@ -2621,7 +2621,7 @@
                 "name": "defaultTasksData",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "taskbox/src/app/stories/task-list.stories.ts",
+                "file": "taskbox/src/app/stories/pure-task-list.stories.ts",
                 "type": "[]",
                 "defaultValue": "[\r\n  { ...taskData, id: '1', title: 'Task 1' },\r\n  { ...taskData, id: '2', title: 'Task 2' },\r\n  { ...taskData, id: '3', title: 'Task 3' },\r\n  { ...taskData, id: '4', title: 'Task 4' },\r\n  { ...taskData, id: '5', title: 'Task 5' },\r\n  { ...taskData, id: '6', title: 'Task 6' },\r\n]"
             },
@@ -2645,17 +2645,17 @@
                 "name": "Empty",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "taskbox/src/app/stories/pure-task-list.stories.ts",
+                "file": "taskbox/src/app/stories/task-list.stories.ts",
                 "type": "",
-                "defaultValue": "() => ({\r\n  template: `\r\n        <div style=\"padding: 3rem\">\r\n          <app-pure-task-list [tasks]=\"[]\" (onPinTask)=\"onPinTask($event)\" (onArchiveTask)=\"onArchiveTask($event)\"></app-pure-task-list>\r\n        </div>\r\n      `,\r\n})"
+                "defaultValue": "() => ({\r\n  template: `\r\n        <div style=\"padding: 3rem\">\r\n          <app-task-list [tasks]=\"[]\" (onPinTask)=\"onPinTask($event)\" (onArchiveTask)=\"onArchiveTask($event)\"></app-task-list>\r\n        </div>\r\n      `,\r\n})"
             },
             {
                 "name": "Empty",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "taskbox/src/app/stories/task-list.stories.ts",
+                "file": "taskbox/src/app/stories/pure-task-list.stories.ts",
                 "type": "",
-                "defaultValue": "() => ({\r\n  template: `\r\n        <div style=\"padding: 3rem\">\r\n          <app-task-list [tasks]=\"[]\" (onPinTask)=\"onPinTask($event)\" (onArchiveTask)=\"onArchiveTask($event)\"></app-task-list>\r\n        </div>\r\n      `,\r\n})"
+                "defaultValue": "() => ({\r\n  template: `\r\n        <div style=\"padding: 3rem\">\r\n          <app-pure-task-list [tasks]=\"[]\" (onPinTask)=\"onPinTask($event)\" (onArchiveTask)=\"onArchiveTask($event)\"></app-pure-task-list>\r\n        </div>\r\n      `,\r\n})"
             },
             {
                 "name": "environment",
@@ -2741,17 +2741,17 @@
                 "name": "Loading",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "taskbox/src/app/stories/pure-task-list.stories.ts",
+                "file": "taskbox/src/app/stories/task-list.stories.ts",
                 "type": "",
-                "defaultValue": "() => ({\r\n  template: `\r\n        <div style=\"padding: 3rem\">\r\n          <app-pure-task-list [tasks]=\"[]\" loading=\"true\" (onPinTask)=\"onPinTask($event)\" (onArchiveTask)=\"onArchiveTask($event)\"></app-pure-task-list>\r\n        </div>\r\n      `,\r\n})"
+                "defaultValue": "() => ({\r\n  template: `\r\n        <div style=\"padding: 3rem\">\r\n          <app-task-list [tasks]=\"[]\" loading=\"true\" (onPinTask)=\"onPinTask($event)\" (onArchiveTask)=\"onArchiveTask($event)\"></app-task-list>\r\n        </div>\r\n      `,\r\n})"
             },
             {
                 "name": "Loading",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "taskbox/src/app/stories/task-list.stories.ts",
+                "file": "taskbox/src/app/stories/pure-task-list.stories.ts",
                 "type": "",
-                "defaultValue": "() => ({\r\n  template: `\r\n        <div style=\"padding: 3rem\">\r\n          <app-task-list [tasks]=\"[]\" loading=\"true\" (onPinTask)=\"onPinTask($event)\" (onArchiveTask)=\"onArchiveTask($event)\"></app-task-list>\r\n        </div>\r\n      `,\r\n})"
+                "defaultValue": "() => ({\r\n  template: `\r\n        <div style=\"padding: 3rem\">\r\n          <app-pure-task-list [tasks]=\"[]\" loading=\"true\" (onPinTask)=\"onPinTask($event)\" (onArchiveTask)=\"onArchiveTask($event)\"></app-pure-task-list>\r\n        </div>\r\n      `,\r\n})"
             },
             {
                 "name": "LoggedIn",
@@ -2981,17 +2981,17 @@
                 "name": "WithPinnedTasks",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "taskbox/src/app/stories/pure-task-list.stories.ts",
+                "file": "taskbox/src/app/stories/task-list.stories.ts",
                 "type": "",
-                "defaultValue": "() => ({\r\n  component: PureTaskListComponent,\r\n  template: `\r\n    <div style=\"padding: 3rem\">\r\n      <app-pure-task-list [tasks]=\"tasks\" (onPinTask)=\"onPinTask($event)\" (onArchiveTask)=\"onArchiveTask($event)\"></app-pure-task-list>\r\n    </div>\r\n  `,\r\n  props: {\r\n    tasks: withPinnedTasksData,\r\n    onPinTask: actionsData.onPinTask,\r\n    onArchiveTask: actionsData.onArchiveTask,\r\n  },\r\n})"
+                "defaultValue": "() => ({\r\n  component: TaskListComponent,\r\n  template: `\r\n    <div style=\"padding: 3rem\">\r\n      <app-task-list [tasks]=\"tasks\" (onPinTask)=\"onPinTask($event)\" (onArchiveTask)=\"onArchiveTask($event)\"></app-task-list>\r\n    </div>\r\n  `,\r\n  props: {\r\n    tasks: withPinnedTasksData,\r\n    onPinTask: actionsData.onPinTask,\r\n    onArchiveTask: actionsData.onArchiveTask,\r\n  },\r\n})"
             },
             {
                 "name": "WithPinnedTasks",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "taskbox/src/app/stories/task-list.stories.ts",
+                "file": "taskbox/src/app/stories/pure-task-list.stories.ts",
                 "type": "",
-                "defaultValue": "() => ({\r\n  component: TaskListComponent,\r\n  template: `\r\n    <div style=\"padding: 3rem\">\r\n      <app-task-list [tasks]=\"tasks\" (onPinTask)=\"onPinTask($event)\" (onArchiveTask)=\"onArchiveTask($event)\"></app-task-list>\r\n    </div>\r\n  `,\r\n  props: {\r\n    tasks: withPinnedTasksData,\r\n    onPinTask: actionsData.onPinTask,\r\n    onArchiveTask: actionsData.onArchiveTask,\r\n  },\r\n})"
+                "defaultValue": "() => ({\r\n  component: PureTaskListComponent,\r\n  template: `\r\n    <div style=\"padding: 3rem\">\r\n      <app-pure-task-list [tasks]=\"tasks\" (onPinTask)=\"onPinTask($event)\" (onArchiveTask)=\"onArchiveTask($event)\"></app-pure-task-list>\r\n    </div>\r\n  `,\r\n  props: {\r\n    tasks: withPinnedTasksData,\r\n    onPinTask: actionsData.onPinTask,\r\n    onArchiveTask: actionsData.onArchiveTask,\r\n  },\r\n})"
             },
             {
                 "name": "withPinnedTasksData",
@@ -3013,7 +3013,7 @@
                 "name": "withPinnedTasksData",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "taskbox/src/app/stories/pure-task-list.stories.ts",
+                "file": "taskbox/src/app/stories/task-list.stories.ts",
                 "type": "[]",
                 "defaultValue": "[\r\n  ...defaultTasksData.slice(0, 5),\r\n  { id: '6', title: 'Task 6 (pinned)', state: 'TASK_PINNED' },\r\n]"
             },
@@ -3021,7 +3021,7 @@
                 "name": "withPinnedTasksData",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "taskbox/src/app/stories/task-list.stories.ts",
+                "file": "taskbox/src/app/stories/pure-task-list.stories.ts",
                 "type": "[]",
                 "defaultValue": "[\r\n  ...defaultTasksData.slice(0, 5),\r\n  { id: '6', title: 'Task 6 (pinned)', state: 'TASK_PINNED' },\r\n]"
             }
@@ -3150,6 +3150,24 @@
                     "defaultValue": "{\r\n  id: '1',\r\n  title: 'Test Task',\r\n  state: 'Task_INBOX',\r\n  updated_at: new Date(2019, 0, 1, 9, 0),\r\n}"
                 }
             ],
+            "src/app/stories/pure-inbox-screen.stories.ts": [
+                {
+                    "name": "Default",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/stories/pure-inbox-screen.stories.ts",
+                    "type": "",
+                    "defaultValue": "() => ({\r\n  component: PureInboxScreenComponent,\r\n})"
+                },
+                {
+                    "name": "error",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/stories/pure-inbox-screen.stories.ts",
+                    "type": "",
+                    "defaultValue": "() => ({\r\n  component: PureInboxScreenComponent,\r\n  props: {\r\n    error: true,\r\n  },\r\n})"
+                }
+            ],
             "src/app/stories/pure-task-list.stories.ts": [
                 {
                     "name": "Default",
@@ -3198,24 +3216,6 @@
                     "file": "src/app/stories/pure-task-list.stories.ts",
                     "type": "[]",
                     "defaultValue": "[\r\n  ...defaultTasksData.slice(0, 5),\r\n  { id: '6', title: 'Task 6 (pinned)', state: 'TASK_PINNED' },\r\n]"
-                }
-            ],
-            "src/app/stories/pure-inbox-screen.stories.ts": [
-                {
-                    "name": "Default",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "src/app/stories/pure-inbox-screen.stories.ts",
-                    "type": "",
-                    "defaultValue": "() => ({\r\n  component: PureInboxScreenComponent,\r\n})"
-                },
-                {
-                    "name": "error",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "src/app/stories/pure-inbox-screen.stories.ts",
-                    "type": "",
-                    "defaultValue": "() => ({\r\n  component: PureInboxScreenComponent,\r\n  props: {\r\n    error: true,\r\n  },\r\n})"
                 }
             ],
             "src/app/stories/task-list.stories.ts": [
@@ -3268,54 +3268,22 @@
                     "defaultValue": "[\r\n  ...defaultTasksData.slice(0, 5),\r\n  { id: '6', title: 'Task 6 (pinned)', state: 'TASK_PINNED' },\r\n]"
                 }
             ],
-            "taskbox/src/app/stories/pure-task-list.stories.ts": [
+            "taskbox/src/app/stories/pure-inbox-screen.stories.ts": [
                 {
                     "name": "Default",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "taskbox/src/app/stories/pure-task-list.stories.ts",
+                    "file": "taskbox/src/app/stories/pure-inbox-screen.stories.ts",
                     "type": "",
-                    "defaultValue": "() => ({\r\n  component: PureTaskListComponent,\r\n  template: `\r\n  <div style=\"padding: 3rem\">\r\n    <app-pure-task-list [tasks]=\"tasks\" (onPinTask)=\"onPinTask($event)\" (onArchiveTask)=\"onArchiveTask($event)\"></app-pure-task-list>\r\n  </div>\r\n`,\r\n  props: {\r\n    tasks: defaultTasksData,\r\n    onPinTask: actionsData.onPinTask,\r\n    onArchiveTask: actionsData.onArchiveTask,\r\n  },\r\n})"
+                    "defaultValue": "() => ({\r\n  component: PureInboxScreenComponent,\r\n})"
                 },
                 {
-                    "name": "defaultTasksData",
+                    "name": "error",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "taskbox/src/app/stories/pure-task-list.stories.ts",
-                    "type": "[]",
-                    "defaultValue": "[\r\n  { ...taskData, id: '1', title: 'Task 1' },\r\n  { ...taskData, id: '2', title: 'Task 2' },\r\n  { ...taskData, id: '3', title: 'Task 3' },\r\n  { ...taskData, id: '4', title: 'Task 4' },\r\n  { ...taskData, id: '5', title: 'Task 5' },\r\n  { ...taskData, id: '6', title: 'Task 6' },\r\n]"
-                },
-                {
-                    "name": "Empty",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "taskbox/src/app/stories/pure-task-list.stories.ts",
+                    "file": "taskbox/src/app/stories/pure-inbox-screen.stories.ts",
                     "type": "",
-                    "defaultValue": "() => ({\r\n  template: `\r\n        <div style=\"padding: 3rem\">\r\n          <app-pure-task-list [tasks]=\"[]\" (onPinTask)=\"onPinTask($event)\" (onArchiveTask)=\"onArchiveTask($event)\"></app-pure-task-list>\r\n        </div>\r\n      `,\r\n})"
-                },
-                {
-                    "name": "Loading",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "taskbox/src/app/stories/pure-task-list.stories.ts",
-                    "type": "",
-                    "defaultValue": "() => ({\r\n  template: `\r\n        <div style=\"padding: 3rem\">\r\n          <app-pure-task-list [tasks]=\"[]\" loading=\"true\" (onPinTask)=\"onPinTask($event)\" (onArchiveTask)=\"onArchiveTask($event)\"></app-pure-task-list>\r\n        </div>\r\n      `,\r\n})"
-                },
-                {
-                    "name": "WithPinnedTasks",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "taskbox/src/app/stories/pure-task-list.stories.ts",
-                    "type": "",
-                    "defaultValue": "() => ({\r\n  component: PureTaskListComponent,\r\n  template: `\r\n    <div style=\"padding: 3rem\">\r\n      <app-pure-task-list [tasks]=\"tasks\" (onPinTask)=\"onPinTask($event)\" (onArchiveTask)=\"onArchiveTask($event)\"></app-pure-task-list>\r\n    </div>\r\n  `,\r\n  props: {\r\n    tasks: withPinnedTasksData,\r\n    onPinTask: actionsData.onPinTask,\r\n    onArchiveTask: actionsData.onArchiveTask,\r\n  },\r\n})"
-                },
-                {
-                    "name": "withPinnedTasksData",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "taskbox/src/app/stories/pure-task-list.stories.ts",
-                    "type": "[]",
-                    "defaultValue": "[\r\n  ...defaultTasksData.slice(0, 5),\r\n  { id: '6', title: 'Task 6 (pinned)', state: 'TASK_PINNED' },\r\n]"
+                    "defaultValue": "() => ({\r\n  component: PureInboxScreenComponent,\r\n  props: {\r\n    error: true,\r\n  },\r\n})"
                 }
             ],
             "taskbox/src/app/stories/task-list.stories.ts": [
@@ -3368,22 +3336,54 @@
                     "defaultValue": "[\r\n  ...defaultTasksData.slice(0, 5),\r\n  { id: '6', title: 'Task 6 (pinned)', state: 'TASK_PINNED' },\r\n]"
                 }
             ],
-            "taskbox/src/app/stories/pure-inbox-screen.stories.ts": [
+            "taskbox/src/app/stories/pure-task-list.stories.ts": [
                 {
                     "name": "Default",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "taskbox/src/app/stories/pure-inbox-screen.stories.ts",
+                    "file": "taskbox/src/app/stories/pure-task-list.stories.ts",
                     "type": "",
-                    "defaultValue": "() => ({\r\n  component: PureInboxScreenComponent,\r\n})"
+                    "defaultValue": "() => ({\r\n  component: PureTaskListComponent,\r\n  template: `\r\n  <div style=\"padding: 3rem\">\r\n    <app-pure-task-list [tasks]=\"tasks\" (onPinTask)=\"onPinTask($event)\" (onArchiveTask)=\"onArchiveTask($event)\"></app-pure-task-list>\r\n  </div>\r\n`,\r\n  props: {\r\n    tasks: defaultTasksData,\r\n    onPinTask: actionsData.onPinTask,\r\n    onArchiveTask: actionsData.onArchiveTask,\r\n  },\r\n})"
                 },
                 {
-                    "name": "error",
+                    "name": "defaultTasksData",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "taskbox/src/app/stories/pure-inbox-screen.stories.ts",
+                    "file": "taskbox/src/app/stories/pure-task-list.stories.ts",
+                    "type": "[]",
+                    "defaultValue": "[\r\n  { ...taskData, id: '1', title: 'Task 1' },\r\n  { ...taskData, id: '2', title: 'Task 2' },\r\n  { ...taskData, id: '3', title: 'Task 3' },\r\n  { ...taskData, id: '4', title: 'Task 4' },\r\n  { ...taskData, id: '5', title: 'Task 5' },\r\n  { ...taskData, id: '6', title: 'Task 6' },\r\n]"
+                },
+                {
+                    "name": "Empty",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "taskbox/src/app/stories/pure-task-list.stories.ts",
                     "type": "",
-                    "defaultValue": "() => ({\r\n  component: PureInboxScreenComponent,\r\n  props: {\r\n    error: true,\r\n  },\r\n})"
+                    "defaultValue": "() => ({\r\n  template: `\r\n        <div style=\"padding: 3rem\">\r\n          <app-pure-task-list [tasks]=\"[]\" (onPinTask)=\"onPinTask($event)\" (onArchiveTask)=\"onArchiveTask($event)\"></app-pure-task-list>\r\n        </div>\r\n      `,\r\n})"
+                },
+                {
+                    "name": "Loading",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "taskbox/src/app/stories/pure-task-list.stories.ts",
+                    "type": "",
+                    "defaultValue": "() => ({\r\n  template: `\r\n        <div style=\"padding: 3rem\">\r\n          <app-pure-task-list [tasks]=\"[]\" loading=\"true\" (onPinTask)=\"onPinTask($event)\" (onArchiveTask)=\"onArchiveTask($event)\"></app-pure-task-list>\r\n        </div>\r\n      `,\r\n})"
+                },
+                {
+                    "name": "WithPinnedTasks",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "taskbox/src/app/stories/pure-task-list.stories.ts",
+                    "type": "",
+                    "defaultValue": "() => ({\r\n  component: PureTaskListComponent,\r\n  template: `\r\n    <div style=\"padding: 3rem\">\r\n      <app-pure-task-list [tasks]=\"tasks\" (onPinTask)=\"onPinTask($event)\" (onArchiveTask)=\"onArchiveTask($event)\"></app-pure-task-list>\r\n    </div>\r\n  `,\r\n  props: {\r\n    tasks: withPinnedTasksData,\r\n    onPinTask: actionsData.onPinTask,\r\n    onArchiveTask: actionsData.onArchiveTask,\r\n  },\r\n})"
+                },
+                {
+                    "name": "withPinnedTasksData",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "taskbox/src/app/stories/pure-task-list.stories.ts",
+                    "type": "[]",
+                    "defaultValue": "[\r\n  ...defaultTasksData.slice(0, 5),\r\n  { id: '6', title: 'Task 6 (pinned)', state: 'TASK_PINNED' },\r\n]"
                 }
             ],
             "src/environments/environment.prod.ts": [
