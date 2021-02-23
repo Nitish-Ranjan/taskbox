@@ -1,6 +1,6 @@
 //src/app/components/task.module.ts
 
-import { NgModule } from '@angular/core';
+import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { NgxsModule } from '@ngxs/store';
 
@@ -14,5 +14,6 @@ import { PureTaskListComponent } from './pure-task-list.component';
   exports: [TaskComponent, TaskListComponent],
   declarations: [TaskComponent, TaskListComponent, PureTaskListComponent],
   providers: [],
+  schemas: [ CUSTOM_ELEMENTS_SCHEMA ]
 })
 export class TaskModule {}
