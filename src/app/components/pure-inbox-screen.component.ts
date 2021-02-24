@@ -15,7 +15,7 @@ import { Component, OnInit, Input } from '@angular/core';
 
     <div *ngIf="!error" class="page lists-show">
       <nav>
-        <h1 class="title-page">
+        <h1 class="title-page" style="background : red;">
           <span class="title-wrapper">Taskbox</span>
         </h1>
       </nav>
