@@ -1,0 +1,26 @@
+# .gitlab-ci.yml
+
+# Additional pipeline configurations
+
+# Sets the stages for the pipeline
+stages:
+  - test
+
+ #👇Checks if the branch is master and runs Chromatic with the flag to accept all changes.
+chromatic_publish_auto_accept_changes:
+  stage: test
+  script:
+    - yarn chromatic --project-token=5bb104aca8e2 --auto-accept-changes
+  rules:
+    - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
+      when: always
+
+ #👇Checks if the branch is not master and runs Chromatic
+chromatic_publish:
+  stage: test
+  script:
+    - yarn chromatic --project-token=5bb104aca8e2 --exit-zero-on-changes
+  rules: 
+    - if: '$CI_PIPELINE_SOURCE == "merge_request_event"'
+      when: always
+      allow_failure: true
